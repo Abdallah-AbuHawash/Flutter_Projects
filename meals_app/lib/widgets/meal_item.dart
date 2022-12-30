@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import '../screens/meal_detail_screen.dart';
@@ -11,13 +13,14 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
-  MealItem(
-      {@required this.id,
-      @required this.title,
-      @required this.imageUrl,
-      @required this.affordability,
-      @required this.complexity,
-      @required this.duration,});
+  MealItem({
+    @required this.id,
+    @required this.title,
+    @required this.imageUrl,
+    @required this.affordability,
+    @required this.complexity,
+    @required this.duration,
+  });
 
   String get complexityText {
     switch (complexity) {
@@ -122,33 +125,45 @@ class MealItem extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         Icons.schedule,
+                        color: Colors.deepOrange,
                       ),
                       SizedBox(
                         width: 6,
                       ),
-                      Text('$duration min'),
+                      Text(
+                        '$duration min',
+                        style: TextStyle(color: Colors.deepOrange),
+                      ),
                     ],
                   ),
                   Row(
                     children: <Widget>[
                       Icon(
                         Icons.work,
+                        color: Colors.deepOrange,
                       ),
                       SizedBox(
                         width: 6,
                       ),
-                      Text(complexityText),
+                      Text(
+                        complexityText,
+                        style: TextStyle(color: Colors.deepOrange),
+                      ),
                     ],
                   ),
                   Row(
                     children: <Widget>[
                       Icon(
                         Icons.attach_money,
+                        color: Colors.deepOrange,
                       ),
                       SizedBox(
                         width: 6,
                       ),
-                      Text(affordabilityText),
+                      Text(
+                        affordabilityText,
+                        style: TextStyle(color: Colors.deepOrange),
+                      ),
                     ],
                   ),
                 ],

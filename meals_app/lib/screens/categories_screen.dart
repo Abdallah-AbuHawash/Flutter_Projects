@@ -13,6 +13,7 @@ class CategoriesScreen extends StatelessWidget {
             (catData) => CategoryItem(
                   catData.id,
                   catData.title,
+                  //catData.image,
                   catData.color,
                 ),
           )

@@ -70,11 +70,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        primarySwatch: Colors.deepOrange,
+        accentColor: Colors.grey.shade500,
+        canvasColor: Color.fromRGBO(255, 254, 229, 20),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
             bodyText1: TextStyle(
@@ -89,7 +90,7 @@ class _MyAppState extends State<MyApp> {
               fontWeight: FontWeight.bold,
             )),
       ),
-      // home: CategoriesScreen(),
+       //home: CategoriesScreen(),
       initialRoute: '/', // default is '/'
       routes: {
         '/': (ctx) => TabsScreen(_favoriteMeals),
