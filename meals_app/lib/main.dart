@@ -74,7 +74,7 @@ debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
-        accentColor: Colors.grey.shade500,
+        accentColor: Colors.grey.shade200,
         canvasColor: Color.fromRGBO(255, 254, 229, 20),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(

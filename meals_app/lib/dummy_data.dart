@@ -145,13 +145,14 @@ const DUMMY_MEALS = const [
     id: 'm4',
     categories: [
       'c4',
+      
     ],
     title: 'Mansaf',
     affordability: Affordability.Luxurious,
     complexity: Complexity.Challenging,
     imageUrl:
-        'https://kitchen.sayidaty.net/uploads/small/43/433e4b0fab1635469b33b63d17be6bb4_w750_h500.jpg',
-    duration: 120,
+        'https://www.munatycooking.com/wp-content/uploads/2022/07/mansaf-feature-image.jpg',
+    duration: 200,
     ingredients: [
       '1 Cup of Rice',
       '500g Lamb',

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../dummy_data.dart';
 
+import 'package:flutter/cupertino.dart';
+
 class MealDetailScreen extends StatelessWidget {
   static const routeName = '/meal-detail';
 
@@ -25,7 +27,7 @@ class MealDetailScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.grey),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(15),
       ),
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
@@ -66,7 +68,7 @@ class MealDetailScreen extends StatelessWidget {
                       ),
                       child: Text(
                         selectedMeal.ingredients[index],
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                        style: TextStyle(color: Colors.white),
                       )),
                 ),
                 itemCount: selectedMeal.ingredients.length,
